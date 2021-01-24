@@ -1909,6 +1909,64 @@ input, select, textarea {
 				ul.contact li:first-child h3 {
 					top: 0;
 				}
+/* Resume */
+
+	ul.resume {
+		list-style: none;
+		padding-left: 0;
+	}
+
+		ul.resume li.resume {
+			position: relative;
+			border-top: solid 3px #ddd;
+			padding: 1.3em 0 1em 16em;
+            font-size: 1.3em;
+		}
+
+			ul.resume li h3 {
+				position: absolute;
+				left: 0;
+				/*top: 1.3em;*/
+				/*font-size: 1.5em;*/
+			}
+
+			ul.resume li p {
+				margin: 0;
+                
+			}
+            
+        ul.resumelist {
+            list-style-type: disc;
+            padding: 0 0 0 0;
+            margin-bottom: 0;
+            /*font-size: 1.2em;*/
+            /*border-bottom: solid 10px #43bff0*/
+            font-weight: 800;
+            }
+
+        ul.resumelist1 {
+            list-style-type:  circle;
+            padding: 0 0 0 2em;
+            margin-bottom: 1em;
+            /*font-size: 1.2em;*/
+            /*border-bottom: solid 10px #43bff0*/
+            font-weight: 500;
+            }
+
+        ul.resumelist li p {
+				margin: 0;
+                font-weight: 500;
+			}
+
+			ul.resume li:first-child {
+				padding-top: 0;
+				border-top: 0;
+			}
+
+				ul.resume li:first-child h3 {
+					top: 0;
+				}
+
 
 /* Dates */
 
