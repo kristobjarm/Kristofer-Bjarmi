@@ -1,0 +1,211 @@
+<html>
+	<head>
+		<title>Kristófer Bjarmi Schram</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+        <section id="header">
+
+            <!-- Logo -->
+                <h1><a href="../index.html">Kristófer Bjarmi Schram</a></h1>
+
+            <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">School</a>
+                            <ul>
+                                <li><a href="#">Manufacturing Processes</a>
+                                    <ul>
+                                        <li><a href="project1.html">Project 1</a></li>
+                                        <li><a href="project2.html">Project 2</a></li>
+                                        <li><a href="project3.html">Project 3</a></li>
+                                        <!-- Hér má bæta við öðrum verkefnum -->
+                                    </ul>
+                                </li>
+                                <!-- <li><a href="#">Mechanical design</a></li> -->
+                            </ul>
+                        </li>
+                        <li><a href="../photos.html">Photos</a></li>
+                        <li><a href="../portfolio.html">Personal Portfolio</a></li>
+                        <li><a href="../resume.html">Resumé</a></li>
+                        <!--<li><a href="no-sidebar.html">No Sidebar</a></li>-->
+                    </ul>
+                </nav>
+            </section>
+            <!-- MAIN -->
+            <section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Project 2 -->
+									<section>
+										<header class="major">
+											<h2>Project 2</h2>
+										</header>
+                                        <header>
+                                            <h3>The Assignment</h3>
+                                            <p>This second project was split in two parts, a team exercise and an inividual project. For the team exercise we where to choose a laser cutter in Fablab and determine the kerf for that particular cutter. For the individual project we had to create a parametric model of an object that we wanted to cut and assemble it with pressfit box joints.    </p>
+                                            <h3>Team exercise</h3>
+                                            <p>What is kerf? The kerf is simply the width of the material removed by the cutting process. It is quite visible when cutting wood with a saw and can be found by measuring the width of the blade, however, when laser cutting it becomes a little more difficult since you can't easily measure the physical width of the laser. So why does this matter to us? Well if we are plannig to cut something that is supposed to fit snugly together we have to account for the material removed.</p>
+                                            <div>
+                                                <img src="../images/synidaemi.jpg" style="width:75%"/>
+                                            </div>
+                                            <p>Theese images show, in an exaggerated way, the effect of cutting by following different paths. Number 1 shows that when you cut an equal amount is removed from either side of the work piece. In 2 we can clearly see that not accounting for the kerf will resault in a loose fit. Whereas in 3 we have offset the line by half the kerf on either piece so that what is left is the final shape that will fit together properly.  </p>
+                                            <p>Since we now know what kerf is how do we measure it on a laser? A good way is with a kerf test. In its simpest form we  could cut out an object with known dimensions and measure how much those dimensions have shortened after the cutting. But since the laser is so thin and the difference is so little we could get an inaccurate resault simply because of dirt and dust. So to get around this we want to take the average of  many cuts. In our case we did that by cutting out 15 squares stacking them togther, measuring the difference in their total length and dividing that by 16. Photo for reference:</p>
+                                            <div>
+                                                <img src="../images/kerf.jpg" style="width:75%"/>
+                                            </div>
+                                            <p>For drawing the kerf for the group I used Autocad. A 15x5cm square comrising 14 vertical lines that would make up the 15 smaller squares. For testing I also added our names to see how the laser would handle engraving. Next I exprorted the file as adxf and imported it into <a href="https://inkscape.org/">Inkscape</a> that then gave me an error. For some reason there are versions of Inkscape that don't handle autocad dxf files to well. But, since inkscape is opensource I simply googled the errorcode and found out that this is a common problem. The fix being editing a parameter in one of the python scripts. The file is called dxf_input.py under Inkscape\share\inkscape\extensions and changing line 72 from "node = layer.add(inkex.Text(**attribs))" to "node = layer.add(inkex.TextElement(**attribs))" fixed the importing problem. </p>
+                                            <p>As per the teachers instructions the lines had to be set at a specific width for the laser cutter. All lines that where supposed to be cut all the way through had to be set to a thickness of 0.02 or less, everything thicker than that is interpreted as engraving. So for our test the lines where set to 0.02 and the letters filled in with a solid color. The file was then exported as a pdf with the object size dermining the canvas size. Here is and image of final file for the cutter.</p>
+                                            <div>
+                                                <img src="../images/kerftest.jpg" style="width:75%"/>
+                                            </div>
+                                            <p>Now came the cutting. We took our file, moved it to a thumbdrive and inserted it in the computer by the laser cutter. We chose one of the two smaller machines at Fablab, our plate of 600x300x4mm plywood fit perfectly in there. Next we had to set home and the focus of the laser. By pressing a few buttons on the machine the motors loosened upp and the head could be manually moved to the top left corner. Then using the depth stop we raised the bed of the laser up until they barely touched. This would make sure the laser was in focus.  On the computer we opend up our pdf file in Adobe Reader and pressed print. Up popped the configurator. Since theese machines are used a lot the staff knew exactly what settings to use for our material and type of cut. After having adjusted the settings the file could be "printed". (What really surprised us was that the laser cutter and computer talked so easily together, like any other regular paper printer).  </p>
+                                            <div class="row1">
+                                              <div class="column2">
+                                                <img src="../images/settings.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column2">
+                                                <img src="../images/sethome.jpg" style="width:100%">
+                                              </div>
+                                            </div>
+                                            <div class="row1">
+                                              <div class="column3">
+                                                <img src="../images/laser1.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column3">
+                                                <img src="../images/laser2.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column3">
+                                                <img src="../images/laser3.jpg" style="width:100%">
+                                              </div>
+                                            </div>
+                                            <p>After having cut our test we slid the pieces to one side and measured the gap with calipers. The gap was 2.07mm and therefore kerf = 2.07/16 = 0.13mm roughly.</p>
+                                            <h3>Individual Project</h3>
+                                            <p>For my project i wanted to create something that would be of real use for me. Then one night lying in bed I got the briliant idea of creating a stand for my shaving gear. Since swithcing over from the regular Gillette multi-bladed-single-use-razor-burn-dual-action-planet-killing razor I have just been keeping my saftey razor and brush on a towl in the bathroom cupboard. I knew that a wanted something that could hold my razor, brush and bowl. So after having had a look on Pinterest I had a clear idea of what I wanted it to look like. The first model was only created as a solid with no box joints because I thought adding them afterwards would be easier. It wasn't. So instead of trying to figure thoose out I decided to whip up some accompanying models. A brush, bowl and razor. The reason for this was that recently I had found out that Solidworks had a rendering tool. That way picturing the final product would be real easy.</p>
+                                            <div>
+                                                <img src="../images/rak_2.jpg" style="width:75%"/>
+                                            </div>
+                                            <p>Time for box joints and parameters. It turned out that it would simply be easier to model my stand again. <a href="https://youtu.be/9U2JPfkQpsE">The video</a> linked by the teacher was quite helpfull for trying to wrap my head around designing joints with parameters. But after having somewhat figured those out the rest was easy since I could apply the concept from the video to the general dimensions from the earlier model to the new one. FYI parameters in Soldiworks are called Equations and are not as easy to work with as thoose in Fusion. This was the new model:</p>
+                                            <div>
+                                                <img src="../images/rakstandursolidworks.jpg" style="width:75%"/>
+                                            </div>
+                                            <div>
+                                                <img src="../images/parameters.jpg" style="width:75%"/>
+                                            </div>
+                                            <p>Next was to create a 2D sketch. Since most of the videos linked where for Fusion I had to figure out how to flatten out my model. I found out that that is not really possible in Solidworks if all elements are in the same part. So the way to get around this was by right clicking each face and pressing "Export as dxf". Then opening a new drawing and importing each individual dxf file. Once I was in the new drawing with all the dxf elements I could start accounting for the kerf by offsetting all the cut lines by half the width of the laser. Instead of using 0.13 as my kerf i used 0.15 because i did not want to run the chance of my fit being too loose. This was the final drawing:</p>
+                                            <div>
+                                                <img src="../images/rakstandursketch.jpg" style="width:75%"/>
+                                            </div>
+                                            <p>Like with the Team Assignment the final dxf was inported into Inkscape and the line width adjusted there. </p>
+                                            
+                                            <p>To my surprise the snapfit box joint came out perfectly the first try and  ofcourse pleased with the decision to make the offset a bit larger. However, after having put it all toghether I noticed a flaw in my design. </p>
+                                            <div>
+                                                <img src="../images/LandscapeDSCF3761.jpg" style="width:75%"/>
+                                            </div>
+                                            <p>Yeah... It didn't really stand straight. My solution was to open up the Inkscape file again and manually draw in a snapfit brace across the top. I used Inkscape for this since I for some reason brought the Solidworks files from my desktop with me but my laptop ran macOS at the time and the computers at Fablab only have Fusion on them. After an hour or so V2 was ready.</p>
+                                            <div>
+                                                <img src="../images/LandscapeDSCF3771.jpg" style="width:75%">
+                                            </div>
+                                            <p>Even though the project might be done at this point I wasn't really diggin the look of plywood on my bathroom sink. So i dug up some automotive epoxy primer that had lying around and gave it a couple of coats. The stand was then sanded and sprayed with a high gloss black paint.</p>
+                                            <p>As an ending to the project I wanted to compare what i had laser cut and painted to the original render. So I setup a tiny makeshift studio on my diningtable made from tape, foamcore and cardstock and setup my camera. This was then the end resault. Spot the difference...</p>
+                                            <div class="row1">
+                                              <div class="column2">
+                                                <img src="../images/LandscapeDSCF3930_3.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column2">
+                                                <img src="../images/rak_2.jpg" style="width:100%">
+                                              </div>
+                                            </div>
+                                            
+                                        </header>
+                                </section>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <!-- FOOTER -->
+            <section id="footer">
+					<div class="container">                      
+						<div class="row"> 
+                            <div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2>About</h2>
+									</header>
+									<a href="#" class="image featured"><img src="../images/gillette.jpg" alt="" /></a>
+									<p>
+										My name is Kristófer Bjarmi Schram I am a BSc Mechanical Engineering stundent at the University of Iceland. Currently working on this website for a course in Mechanical Processes. What do you think?
+									</p>
+								</section>
+							</div>
+							<div class="col-3 col-12-medium">
+								<section>
+									<header>
+										<h2>Contact me</h2>
+									</header>
+									<ul class="social">
+										<li><a class="icon brands fa-facebook" href="https://www.facebook.com/HaskoliIslands"><span class="label">Facebook</span></a></li>
+										<li><a class="icon brands fa-twitter" href="https://twitter.com/Haskoli_Islands"><span class="label">Twitter</span></a></li>
+										<li><a class="icon brands fa-instagram" href="https://www.instagram.com/haskoli_islands/"><span class="label">Instagram</span></a></li>
+                                        <li><a class="icon brands fa-github" href="https://github.com/kristobjarm/kristoferbjarmi"><span class="label">Github</span></a></li>
+									</ul>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<p>
+												Háskóli Íslands<br />
+												Sæmundargötu 2<br />
+												102 Reykjavík
+											</p>
+										</li>
+										<li>
+											<h3>Mail</h3>
+											<p><a href="#">kbs24@hi.is</a></p>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<p>(00354) 58-12345</p>
+										</li>
+									</ul>
+								</section>
+							</div>
+                            <!-- <div class="col-4 col-12-medium">
+								<section>
+									<header>
+										<h2></h2>
+									</header>
+									<ul class="contact">
+										<li>
+											<h3>Mail</h3>
+											<p><a href="#">kbs24@hi.is</a></p>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<p>(00354) 58-12345</p>
+										</li>
+									</ul>
+								</section>
+							</div> --> 
+						</div>
+					</div>
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
