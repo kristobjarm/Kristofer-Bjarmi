@@ -47,59 +47,105 @@
 								<!-- Project 2 -->
 									<section>
 										<header class="major">
-											<h2>Project 3 (WORK IN PROGRESS)</h2>
+											<h2>Project 3</h2>
 										</header>
                                         <header>
                                             <h3>The Assignment</h3>
-                                            <p>Team exercise: Printing a test piece to learn and get an understanding of a 3D printer's limitations and constraints... </p>
-                                            <p>Individual project: Printing an object that could not be made with subtractive manufacturing...  </p>
+                                            <p>For this project's team assignment we were to explore the limits of 3D printing. Then using that new knowledge in our individual project where we had to design and print something that could not easily be created with conventional subtractive manufacturing. Then finally scan something  and create a 3D model.  </p>
+                                    
                                             <h3>Team exercise</h3>
-                                            <p>Intro to the team assignment. *instert image below* </p>
+                                            <p>For this excercise we had to decide on a 3D model that we wanted to print. The model should be printed with 100% infill and without any support structures. The point of this was to understand what the printer is actually capable of. A model fit for this should therefor contain a couple of diffrent tests, those tests would then gives us an idea of how the printer handles overhang, sharp edges, tolerances and so on. After having had a look around one of the group members came across <a href="https://www.thingiverse.com/thing:2975429">this model</a> on Thiniverse:  </p>
                                             <div>
-                                                <!--<img src="../images/synidaemi.jpg" style="width:75%"/>-->
+                                                <img src="../images/3dscantest.jpg" style="width:75%"/>
                                             </div>
-                                            <p>Writing points: What printer did we use? why did we use that printer? what material and what are its weaknesses? Anything particular about the 3D model that we choose? Settings on the printer/in the slicer? What slicer did we use?  How does a 3D printer work (Briefly)?  Resault and leaning outcome after having had a look at the print.  </p>
-                                            <p>Show pictures of: 3D model, slicer, informational images of how a printer works, the final print </p>
+                                            <p>The test seemed to be nicely thought out, compact and didn't use too much plastic and, importantly, covered all the different elements that we wanted to test. After downloading the file we imported it into the slicer (slicer? more on that later). The slicer was then set up to not add support, have a layer resolution of 0.15mm and 100% infill.  </p>
                                             <div>
-                                               <!-- <img src="../images/kerf.jpg" style="width:75%"/>-->
+                                                <img src="../images/slicersettings.jpg" style="width:75%"/>
                                             </div>
-                                            <!--
-                                            <div class="row1">
-                                              <div class="column2">
-                                                <img src="../images/settings.jpg" style="width:100%">
-                                              </div>
-                                              <div class="column2">
-                                                <img src="../images/sethome.jpg" style="width:100%">
-                                              </div>
+                                            <p>For printing we used an original Prusa i3 MK3 printing in Polylactic Acid or PLA. The plastic used in 3D printers is called filament and PLA filament is probably the most common one. It has a lot of benefits over other plastics. Its inexpensive, doesn't create harmfull fumes and is biodegradeble. However, like most things it also has quite a few cons. Since PLA is biodegradable it does not stand up to time so well and will thus slowly disintegrate. It also doesn't hold up to high temperatures and is not really that strong. So if your planning on printing anything that is supposed to hold up to any kind of stress using another filament might be better. On the subject of technical aspects of 3D printing lets shortly talk about the slicer. Like the name suggests the slicer takes your model and slices it into thin pieces that represent every layer of the printed object. The individual layers are then converted to paths that the printer head follows.  </p>
+                                            <div>
+                                                <img src="../images/slicervis.jpg" style="width:100%"/>
                                             </div>
                                             <div class="row1">
                                               <div class="column3">
-                                                <img src="../images/laser1.jpg" style="width:100%">
+                                                <img src="../images/3dtest1_1x1.jpg" style="width:100%">
                                               </div>
                                               <div class="column3">
-                                                <img src="../images/laser2.jpg" style="width:100%">
+                                                <img src="../images/3dtest2_1x1.jpg" style="width:100%">
                                               </div>
                                               <div class="column3">
-                                                <img src="../images/laser3.jpg" style="width:100%">
+                                                <img src="../images/3dtest3_1x1.jpg" style="width:100%">
                                               </div>
                                             </div>
-                                            -->
-                                            <p></p>
-                                            <h3>Individual Project</h3>
-                                            <p>Intro to the individual project.</p>
-                                            <p>What did i print and why... Macro lens tube for converting Fuji x-mount camera to M42 lenses. </p>  
-                                            <p>explain the process from reason to execution (what does a macro tube do and how does it work) to model to printing to outcome</p>
-                                            <!--
-                                            <div class="row1">
-                                              <div class="column2">
-                                                <img src="../images/LandscapeDSCF3930_3.jpg" style="width:100%">
-                                              </div>
-                                              <div class="column2">
-                                                <img src="../images/rak_2.jpg" style="width:100%">
-                                              </div>
+                                            <p>After roughly two hours of printing the part was ready to be peeled off its platter. A visual inspection and discussions with the instructor gave us all the information that we needed for our final assesment about the printers limitations. The test that clearly came out the worst was the bridging test. All other outcomes where fairly acceptable. Anything above the 40-45 mark had a terrible surface finish with a lot of stringing and loose bits of platic hanging off the underside. This was easily explained by the fact that the following layers did not have enough material under them to be placed on. The picture below shows a crosscut of the individual passes. </p>
+                                            <div>
+                                                <img src="../images/overhang.jpg" style="width:100%"/>
                                             </div>
-                                            -->
+                                            <p>The main learning outcome of the team assignment was therefor that when we are designing parts that are meant to be 3D printed we have to account for dramatic overhang. The way around this is that in some cases you can simply change the orientation of the part. Printing it on its side would then make a 20 degree angle a 70 degree angle. However, if the part is too complex and rotating it around is not helping then adding an easily removable support structure to the part would also get you around this. </p>
                                             
+                                            <h3>Individual Project</h3>
+                                            <p>Lately I have been doing a lot of film photography, not necisarily to get the "film effect" but more so to limit the amount of shots I take. So instead of taking a hundred mediocre images I'm slowing down a bit and taking ten that I took my time with. However, with film you have to get it developed and then scanned if you want to keep a digital copy. For the time being I'm not ready to start developing at home but, scanning on the other hand is somthing I can do. Since I don't want to go out and buy an expensive flatbed scanner I thought that I could maybe use my camera instead. So after a bit of looking around I found out that people have been taking pictures of the negatives and flipping the colors in lightroom. For this to work I would need a sturdy tripod, check, a light panel for shining through the negative, check, a camera with a macro lens, ehhh. Well I have a relatively nice Fujifilm camera and a couple of old 50mm manual lenses, however, none of them are of the macro kind. The macro lens is a must since it allows you to get a closer focus distance so that the negative fills the entire frame of the camera and thereby get the highest quality. </p>  
+                                            <div>
+                                                <img src="../images/closestdistance.jpg" style="width:100%"/>
+                                            </div>
+                                            <p>Finally we get to the project. Since the manual lenses that I have use an adapter I thought that i could simply 3D print one that is longer which would then bring the focus distance closer but in turn remove the ambility to focus to infinity. Luckily we don't need to be able to do both. Looking at macro extensions most of them come in a set with the smallest ring having a thinckness of 7mm. Thats the amount that I wanted to add to the length of my manual lens adapter. So to be clear I want to make an adatper that is the length of the original adapter plus 7mm. On one end there is a Fuji camera mount and on the other a manual lens screw mount. Left picture plus right picture. </p>
+                                            
+                                            <div class="row1">
+                                              <div class="column2">
+                                                <img src="../images/m42fuji.jpg" style="width:86%">
+                                              </div>
+                                              <div class="column2">
+                                                <img src="../images/macrotubes.jpg" style="width:95%">
+                                              </div>
+                                            </div>
+                                            <p>For the general design I took mesurements of the screw mount adapter and lengthened it by 7mm. As can be seen in the right pictuce the threads for the lens are quite fine but removable. So instead of trying to 3D print them I made a recess so that I could reuse the steel ring with the threads on the 3D printed part.  </p>
+                                            <div class="row1">
+                                              <div class="column3">
+                                                <img src="../images/millihringur1.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column3">
+                                                <img src="../images/millihringur2.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column3">
+                                                <img src="../images/millihringur3.jpg" style="width:100%">
+                                              </div>
+                                            </div>
+                                            <p>the three holes around the top where for screw to secure the threaded ring and to make the part as strong as possible it was printed with 100% infill. (The 3D-model can be found <a href="https://github.com/kristobjarm/kristoferbjarmi/tree/main/random%20files">here</a>) Lastly the inside was blackend with a marker to reduce reflections. This was then the final outcome. </p>
+                                            <div class="row1">
+                                              <div class="column3">
+                                                <img src="../images/3dmillihringur3.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column3">
+                                                <img src="../images/3dmillihringur2.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column3">
+                                                <img src="../images/3dmillihringur1.jpg" style="width:100%">
+                                              </div>
+                                            </div>
+                                            
+                                            <div class="row1">
+                                              <div class="column2">
+                                                <img src="../images/millihringurfinal.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column2">
+                                                <img src="../images/millihringuramyndavel.jpg" style="width:100%">
+                                              </div>
+                                            </div>
+                                            <p>After a bit of setting up the adapter worked perfectly. Next on the film scanning list is figuring out a good way to keep dust away. This was the setup and test scan after having reversed the colors in lightroom. </p>
+                                            <div class="row1">
+                                              <div class="column2">
+                                                <img src="../images/filmtest.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column2">
+                                                <img src="../images/DSCF3819.jpg" style="width:100%">
+                                              </div>
+                                            </div>
+                                            <h3>3D Scannig</h3>
+                                            <p>This part of the project took the shortest amount of time. As per the instructors recommendation I used <a href="https://www.3dflow.net/3df-zephyr-free/">3DF Zephyr</a> It was easy to use and the free version can handle up to 50 images. After having read a bit about the scanning process I found out that you need a lot of light to get the best resault. So I turned on all the lamps in my apartment and focused them on the subject. My trusty old casio fx-350. I took about 40 pictures from all angles and uploaded them to the software. Not knowing anything about 3D Zephyr I looked up a tutorial on youtube and found <a href="https://www.youtube.com/watch?v=17UTelgZqBg&ab_channel=3DflowChannel">this one</a> that was on their own youtube channel. There isn't really any reason for me to explain every step since the video does a really good job of it. The tutorial guided me through the process nicely and after a lot loading I was left with this as the final resault. </p>
+                                            <div>
+                                                <img src="../images/3dscan3.jpg" style="width:100%"/>
+                                            </div>
+                                            <p>I had to do some trimming since the program also created a model of the table that the calculator was sitting on. By looking at the screen you can see that the scanning software doesn't really like reflections and has created a hole through the middle of the model. This could probably be prevented by making it non reflective. Maybe taping over the glossy part? </p>
                                         </header>
                                 </section>
                             </div>
@@ -115,7 +161,7 @@
 									<header>
 										<h2>About</h2>
 									</header>
-									<a href="#" class="image featured"><img src="../images/thingstaketime.jpg" alt="" /></a>
+									<a href="#" class="image featured"><img src="../images/honnunarskjoldur.jpg" alt="" /></a>
 									<p>
 										My name is Kristófer Bjarmi Schram I am a BSc Mechanical Engineering stundent at the University of Iceland. Currently working on this website for a course in Mechanical Processes. What do you think?
 									</p>
