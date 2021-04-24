@@ -55,8 +55,61 @@
                                         <header>
                                             <h3>The Assignment</h3>
                                             
+                                            <p>For the fifth project in our Manufactoring processes course we were to dive into mold making. We should design an object, create the nessicary molds, mill it out of polystyrene and then cast our object. Unfortunately due to yet another wave of Covid we were unable to get to that last part. Like with the previous assignment I was joined by Baldur and Sigurður. Once again was I in charge of designing the object, <a href="https://sigurdurrunar.github.io/Netsida/framleidsluferli.html">Sigurður</a> took care of creating the toolpath and since Baldur did not get to do his part, i.e. casting, he will be putting in some extra hours with the sixth and final assignment.  </p>
                                             
+                                            <h3>Designing</h3> 
                                             
+                                            <p>This time around I wanted to create somthing pratical. The chair from the last project looks cool and all but not too comfy with solid pieces of flat plywood as the seat and backrest. The team had lots of great ideas with two of them coming close to being chosen for the project. The first was a hood scoop for Baldurs old Hilux but that model was created before we notice the size limit of 30x30cm. The second one was a bit more outside the box. We wanted to ditch the resin and have the molds be reusable for creating ice cubes in the shape of Peroni beer bottles. With the size limit that too turned out to be impractical since we wouldn't have been able to make more than two ice cubes at a time. (For thoose that are interested the completed STL files for both objects can be found in the <a href="https://github.com/kristobjarm/kristoferbjarmi">random files</a> folder under project 5). At last we agreed on staying inside confines of the project and decided to design a headphone hook. Headphone hooks, like the name implies, are used for hanging headphones on instead of them taking up desk space when they are not in use.  These hooks come in many different forms. Most of them, however, clamp to the desk which would not work for my particular setup.    </p>
+                                            <div class="row1">
+                                              <div class="column2">
+                                                <img src="../images/hook1.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column2">
+                                                <img src="../images/hook2.jpg" style="width:100%">
+                                              </div>
+                                            </div>
+                                            <p>Since I have more than one pair of headphone I wanted somthing that could be glued to the wall behind my monitor so that they would always be within reach without being too much of an eyesore. </p>
+                                            
+                                            <p> Before I started drawing I set my self two goals. The hook should have a overall slim profile and be strong enough to carry other things besides just a pair light headphones. After a bit of sketching on a piece of paper this was the outcome after having put it all into Solidworks.   </p>
+                                            <div>
+                                                <img src="../images/krokur.jpg" style="width:75%"/>
+                                            </div>
+                                            <p> The hook consist of three main parts. A vertical piece for glueing, a flat horizontal bar with a slight curve for haning the headphones on and lastly the diagonal support. The hook is only 10cm tall so it clearly satifies the first goal of being relatively small. As for the second goal I did a quick simulation in Solidworks. I added epoxy as my material, fixed the backplate and applied a force of a 1000N (~100kg) to the front.  </p>
+                                            <div>
+                                                <img src="../images/krokurfem.jpg" style="width:75%"/>
+                                            </div>
+                                            <p> As can be seen the stress barely goes in to the yellow area and the graph shows that we are still almost a factor of ten away from reaching the yield strength. The safety factor turned out to be around 3.5. This satifies the second goal. </p>
+                                            
+                                            <h3>Making the mold</h3>
+                                            <p>The mold making turned out to be simpler than expected. Our instructor had linked to a few vides showing the process as well as walking us through it in his class. First we would need to make a mold for the hook itself. That mold would then be made out of some sort of silicone.  However, the silicone mold would have to be cast in polystyrene. This all meant that the final 3D drawing is a mold of a mold of a hook... </p>
+                                            
+                                            <p>The first step was to extrude a block covering the entire hook (Left). Then subtracting the hook from the block and splitting it into two parts (Middle) leaving us with a two piece negative. The next step was putting the two halves in the same plane, adding guiding pins making them easier to put together and an opening into which the epoxy could be poured (Right).  </p>
+                                            <div class="row1">
+                                              <div class="column3">
+                                                <img src="../images/krokur2.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column3">
+                                                <img src="../images/krokur3.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column3">
+                                                <img src="../images/krokur5.jpg" style="width:100%">
+                                              </div>
+                                            </div>
+                                            <p>Now for making the mold that would be cut out of styrene. That porcess was mostly the same as the first step with the extrucion being larger than the part, however, this time it should be flush with the back of the mold. This is done so that the silicone can be poured over. On the image to the right you can see that I made the guiding pins conical so that they halves come together even better.  </p>
+                                            <div class="row1">
+                                              <div class="column3">
+                                                <img src="../images/krokur7.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column3">
+                                                <img src="../images/krokur8.jpg" style="width:100%">
+                                              </div>
+                                              <div class="column3">
+                                                <img src="../images/krokur9.jpg" style="width:100%">
+                                              </div>
+                                            </div>
+                                            <p>That has been all for my part of the assignment so head over to <a href="https://sigurdurrunar.github.io/Netsida/framleidsluferli.html">Sigurðurs page</a> to find out about the making of the toolpath.</p> 
+                                            
+                                            <p>All files used in the project can be found in the random files folder in my repo either by clicking the Github logo at the bottom of the page or by clicking <a href="https://github.com/kristobjarm/kristoferbjarmi">here</a> </p>
                                         </header>
                                 </section>
                             </div>
@@ -72,7 +125,7 @@
 									<header>
 										<h2>About</h2>
 									</header>
-									<a href="#" class="image featured"><img src="../images/cncmeme.jpg" alt="" /></a>
+									<a href="#" class="image featured"><img src="../images/epoxymeme.jpg" alt="" /></a>
 									<p>
 										My name is Kristófer Bjarmi Schram I am a BSc Mechanical Engineering stundent at the University of Iceland. Currently working on this website for a course in Mechanical Processes. What do you think?
 									</p>
